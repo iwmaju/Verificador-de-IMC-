@@ -1,0 +1,22 @@
+print ("Bem vindo ao verificador de IMC")
+idade = float (input("Digite a sua idade:"))
+peso = float (input ("Digite o seu peso atualmente:"))
+altura = float (input("Digite a sua altura:"))
+resultado = peso / (altura * altura)
+
+print ("Iremos calcular o seu IMC")
+
+if resultado < 18.6:
+    print ("De acordo com as informações,você está abaixo do peso")
+
+elif resultado >= 18.6 and resultado < 24.9:
+    print ("De acordo com as informações,você está com o peso normal")
+
+elif resultado >= 25 and resultado < 29.9:
+    print ("De acordo com as informações,você está com sobrepeso")
+
+elif resultado > 29.9:
+    print ("De acordo com as informações,você está com obesidade")
+
+else:
+    print ("Digite as informações novamente para calcularmos o seu IMC")
